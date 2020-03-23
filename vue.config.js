@@ -13,6 +13,8 @@ module.exports = {
     }
   },
   pwa: {
+    themeColor: '#fafafa',
+    msTileColor: '#fafafa',
     workboxPluginMode: 'InjectManifest',
     workboxOptions: {
       swSrc: './src/sw.js',
