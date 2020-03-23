@@ -4,10 +4,10 @@
 set -e
 
 # build
-npm run build
+npm run build:prod
 
 # navigate into the build output directory
-cd dist
+cd prod
 
 # if you are deploying to a custom domain
 # echo 'www.example.com' > CNAME

@@ -1,7 +1,10 @@
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production'
+  publicPath: process.env.VUE_APP_ENV === 'prod'
     ? '/TodoApp/'
     : '/',
+  outputDir: process.env.VUE_APP_ENV === 'prod'
+    ? 'prod'
+    : 'dist',
   css: {
     loaderOptions: {
       sass: {
