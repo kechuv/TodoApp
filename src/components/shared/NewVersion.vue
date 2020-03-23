@@ -1,6 +1,6 @@
 <template>
   <div id="refresh" v-if="updateExists" @click="refreshApp">
-    <span>New version available! Click to update</span>
+    <span>New version available! Click here to update.</span>
   </div>
 </template>
 

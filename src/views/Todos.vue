@@ -97,6 +97,7 @@ export default {
   grid-template-areas: 'repoLink' 'todoList' 'newContainer'
   +md()
     padding: 1rem 0
+    grid-template-rows: auto auto 1fr
     grid-template-areas: 'repoLink' 'newContainer' 'todoList'
 .repo-link
   grid-area: repoLink
@@ -117,10 +118,10 @@ export default {
     width: 40%
 .todo-list
   grid-area: todoList
-  overflow-y: scroll
+  overflow-y: auto
   padding: 0 1rem
   +md()
-    padding: 1rem 2rem
+    padding: 0 2rem
 .todo-list > .filters
   position: sticky
   top: 0
