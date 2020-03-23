@@ -7,11 +7,8 @@
 </template>
 
 <style lang="sass" scoped>
-#nav
-  padding: 30px
-  a
-    font-weight: bold
-    color: #2c3e50
-    &.router-link-exact-active
-      color: #42b983
+#main
+  height: 100%
+#main > main
+  height: 100%
 </style>

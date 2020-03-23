@@ -18,4 +18,5 @@ export default {
 <style lang="sass">
 #app
   margin: 0
+  height: 100%
 </style>
