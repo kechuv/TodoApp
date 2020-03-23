@@ -3,7 +3,7 @@ module.exports = {
     ? '/TodoApp/'
     : '/',
   outputDir: process.env.VUE_APP_ENV === 'prod'
-    ? 'prod'
+    ? 'dist_prod'
     : 'dist',
   css: {
     loaderOptions: {

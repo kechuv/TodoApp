@@ -9,6 +9,7 @@
     </div>
     <div class="todo-list">
       <TodoFilters
+      class="filters"
       :tabs="tabs"
       :total="todoCounter"
       @newFilter="filter = $event" />
@@ -89,20 +90,39 @@ export default {
 
 <style lang="sass" scoped>
 #todos
-  margin: 2rem 0
+  height: 100vh
+  display: grid
+  grid-template-columns: 1fr
+  grid-template-rows: auto 1fr auto
+  grid-template-areas: 'repoLink' 'todoList' 'newContainer'
+  +md()
+    padding: 1rem 0
+    grid-template-areas: 'repoLink' 'newContainer' 'todoList'
 .repo-link
+  grid-area: repoLink
   display: flex
   justify-content: center
   align-items: center
 .new-container
+  grid-area: newContainer
   display: flex
   justify-content: center
+  align-items: center
+  padding: 1rem 0
+  background-color: $white
 .new-container > *
-  width: 100%
-  +sm()
+  +md()
     width: 50%
   +lg()
     width: 40%
 .todo-list
-  margin: 2rem 0
+  grid-area: todoList
+  overflow-y: scroll
+  padding: 0 1rem
+  +md()
+    padding: 1rem 2rem
+.todo-list > .filters
+  position: sticky
+  top: 0
+  background-color: $white
 </style>

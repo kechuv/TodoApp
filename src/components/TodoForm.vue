@@ -49,7 +49,7 @@ export default {
   },
   methods: {
     saveTodo: async function() {
-      if (this.val.trim().length > 0) this.$emit('saveTodo', this.val);
+      if (this.val.trim().length > 0) this.$emit('saveTodo', this.val.trim());
       this.val = null;
     }
   }
@@ -79,6 +79,7 @@ form
   border: none
   border-bottom: 1px solid $mid_gray
   outline: none
+  font-size: 1rem
   &:focus
     border-bottom: 1px solid $black
 </style>

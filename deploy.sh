@@ -7,7 +7,7 @@ set -e
 npm run build:prod
 
 # navigate into the build output directory
-cd prod
+cd dist_prod
 
 # if you are deploying to a custom domain
 # echo 'www.example.com' > CNAME
