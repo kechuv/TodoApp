@@ -1,5 +1,6 @@
 <template>
   <div id="todos">
+    <p class="repo-link"><a class="link" href="https://github.com/kechuv/TodoApp" target="_blank">Repo @ Github</a></p>
     <div class="new-container">
       <TodoForm
       :id="'new'"
@@ -89,6 +90,10 @@ export default {
 <style lang="sass" scoped>
 #todos
   margin: 2rem 0
+.repo-link
+  display: flex
+  justify-content: center
+  align-items: center
 .new-container
   display: flex
   justify-content: center

@@ -9,8 +9,12 @@
 .link
   cursor: pointer
   transition: all 0.1s ease-in-out
+  color: $black
+  +lg()
+    color: $mid_gray
   &:hover
     +lg()
+      color: $black
       text-decoration: underline
   &.active
     color: $black
