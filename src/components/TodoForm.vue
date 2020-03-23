@@ -9,7 +9,7 @@
       :name="componentID"
       placeholder="Press enter to add"
       v-model="val"
-      @keyup.enter.exact="saveTodo"
+      @keypress.enter.exact.prevent="saveTodo"
       @keyup.esc="$emit('cancel')"
       @focusout="$emit('cancel')"></textarea>
     </div>
